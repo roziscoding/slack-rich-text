@@ -9,6 +9,7 @@
     "watch": "tsc -w",
     "docs": "typedoc --plugin typedoc-plugin-markdown src/index.ts && mv docs/modules.md API.md && rm -rf docs"
   },
+  "prepublishOnly": "npm run build",
   "keywords": [],
   "author": "",
   "license": "MIT",
