@@ -1,8 +1,14 @@
-import { Section, createSection } from "../elements/section";
+import { Section, createSection } from "./section";
 import { text } from "./section/elements";
 
+/**
+ * Elements that can be passed to the list function
+ */
 export type AcceptableListInput = string | string[] | List[] | Section;
 
+/**
+ * A list element
+ */
 export type List = {
   type: "rich_text_list";
   style: "bullet" | "ordered";
@@ -12,16 +18,17 @@ export type List = {
   border: number;
 };
 
-export const isStringArray = (obj: any): obj is string[] => Array.isArray(obj) && typeof obj[0] === "string";
 
-export const isListArray = (element: AcceptableListInput): element is List[] => {
+const isStringArray = (obj: any): obj is string[] => Array.isArray(obj) && typeof obj[0] === "string";
+
+const isListArray = (element: AcceptableListInput): element is List[] => {
   if (typeof element === "string") return false;
   if (!Array.isArray(element)) return false;
   if (isStringArray(element)) return false;
   return element[0].type === "rich_text_list";
 };
 
-export const createList = (style: List["style"], elements: Section[], indent = 0): List => ({
+const createList = (style: List["style"], elements: Section[], indent = 0): List => ({
   type: "rich_text_list",
   style,
   elements,
@@ -30,7 +37,7 @@ export const createList = (style: List["style"], elements: Section[], indent = 0
   border: 0,
 });
 
-export const createNestedList = (style: List["style"], elements: AcceptableListInput[], indent = 0): List[] => {
+const createNestedList = (style: List["style"], elements: AcceptableListInput[], indent = 0): List[] => {
   const lists: List[] = [];
   let currentList = createList(style, [], indent);
 
@@ -66,5 +73,14 @@ export const createNestedList = (style: List["style"], elements: AcceptableListI
   return lists;
 };
 
+/**
+ * Creates a bullet list. Use it as a template string tag.
+ * @returns The list
+ */
 export const bullets = (elements: AcceptableListInput[]): List[] => createNestedList("bullet", elements);
+
+/**
+ * Creates an ordered list. Use it as a template string tag.
+ * @returns The list
+ */
 export const ordered = (elements: AcceptableListInput[]): List[] => createNestedList("ordered", elements);

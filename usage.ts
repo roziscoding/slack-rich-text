@@ -1,7 +1,24 @@
-import { bullets, ordered, richText } from "./src/rich_text";
+import { bullets, emoji, ordered, richText, section } from "./src/rich_text";
 
 const blocks = richText`
-  ${bullets(["Hello, world!", "This is a test", ordered(["First", "Second", "Third", bullets(["A", "B", "C"])])])}
+  This is a test message for slack-rich-text.
+
+  It supports:
+  ${bullets([
+    "Bullet lists",
+    "Yaay!",
+    ordered([
+      "Also",
+      "Ordered",
+      "Lists", 
+      bullets([
+        "And", 
+        "Nested", 
+        "Lists",
+        section`${emoji("smile")} ${emoji("smile")} ${emoji("smile")}`
+      ])
+    ])
+  ])}
 `;
 
-console.log(JSON.stringify({ blocks: [blocks] }, null, 2));
+console.log(JSON.stringify({ blocks: [blocks] }))
