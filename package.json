@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.19",
     "typedoc": "^0.25.8",
@@ -20,5 +20,5 @@
   },
   "files": [
     "dist"
-  ]
+  ],
 }
