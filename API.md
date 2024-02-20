@@ -54,7 +54,7 @@ Elements that can be passed to the list function
 
 #### Defined in
 
-rich_text/elements/list.ts:7
+[rich_text/elements/list.ts:7](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/list.ts#L7)
 
 ___
 
@@ -77,7 +77,7 @@ A list element
 
 #### Defined in
 
-rich_text/elements/list.ts:12
+[rich_text/elements/list.ts:12](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/list.ts#L12)
 
 ___
 
@@ -97,7 +97,7 @@ A preformatted block of text
 
 #### Defined in
 
-rich_text/elements/preformatted.ts:7
+[rich_text/elements/preformatted.ts:7](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/preformatted.ts#L7)
 
 ___
 
@@ -117,7 +117,7 @@ A quote element
 
 #### Defined in
 
-rich_text/elements/quote.ts:7
+[rich_text/elements/quote.ts:7](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/quote.ts#L7)
 
 ___
 
@@ -137,7 +137,7 @@ Root block for a rich text message
 
 #### Defined in
 
-[rich_text/index.ts:14](https://github.com/roziscoding/smack/blob/6c1641f/src/rich_text/index.ts#L14)
+[rich_text/index.ts:14](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/index.ts#L14)
 
 ___
 
@@ -149,7 +149,7 @@ The elements that can be used to create a rich text message
 
 #### Defined in
 
-[rich_text/index.ts:9](https://github.com/roziscoding/smack/blob/6c1641f/src/rich_text/index.ts#L9)
+[rich_text/index.ts:9](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/index.ts#L9)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/index.ts:5
+[rich_text/elements/section/index.ts:5](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/index.ts#L5)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:46
+[rich_text/elements/section/elements.ts:46](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L46)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:5
+[rich_text/elements/section/elements.ts:5](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L5)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:1
+[rich_text/elements/section/elements.ts:1](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L1)
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:7
+[rich_text/elements/section/elements.ts:7](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L7)
 
 ## Variables
 
@@ -224,7 +224,7 @@ A line break.
 
 #### Defined in
 
-rich_text/elements/section/index.ts:18
+[rich_text/elements/section/index.ts:18](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/index.ts#L18)
 
 ## Functions
 
@@ -249,7 +249,7 @@ A new text element with the style applied
 
 #### Defined in
 
-rich_text/style.ts:15
+[rich_text/style.ts:15](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/style.ts#L15)
 
 ___
 
@@ -273,7 +273,7 @@ The list
 
 #### Defined in
 
-rich_text/elements/list.ts:80
+[rich_text/elements/list.ts:80](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/list.ts#L80)
 
 ___
 
@@ -304,7 +304,7 @@ A channel section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:59
+[rich_text/elements/section/elements.ts:59](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L59)
 
 ___
 
@@ -329,7 +329,7 @@ A new text element with the style applied
 
 #### Defined in
 
-rich_text/style.ts:36
+[rich_text/style.ts:36](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/style.ts#L36)
 
 ___
 
@@ -354,7 +354,7 @@ The preformatted block
 
 #### Defined in
 
-rich_text/elements/preformatted.ts:20
+[rich_text/elements/preformatted.ts:20](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/preformatted.ts#L20)
 
 ___
 
@@ -379,7 +379,7 @@ The quote element
 
 #### Defined in
 
-rich_text/elements/quote.ts:20
+[rich_text/elements/quote.ts:20](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/quote.ts#L20)
 
 ___
 
@@ -399,7 +399,7 @@ ___
 
 #### Defined in
 
-rich_text/elements/section/index.ts:9
+[rich_text/elements/section/index.ts:9](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/index.ts#L9)
 
 ___
 
@@ -423,7 +423,7 @@ An emoji section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:106
+[rich_text/elements/section/elements.ts:106](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L106)
 
 ___
 
@@ -448,7 +448,7 @@ A new text element with the style applied
 
 #### Defined in
 
-rich_text/style.ts:22
+[rich_text/style.ts:22](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/style.ts#L22)
 
 ___
 
@@ -474,7 +474,7 @@ A link section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:72
+[rich_text/elements/section/elements.ts:72](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L72)
 
 ___
 
@@ -498,7 +498,7 @@ The list
 
 #### Defined in
 
-rich_text/elements/list.ts:86
+[rich_text/elements/list.ts:86](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/list.ts#L86)
 
 ___
 
@@ -523,7 +523,7 @@ The preformatted block
 
 #### Defined in
 
-rich_text/elements/preformatted.ts:30
+[rich_text/elements/preformatted.ts:30](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/preformatted.ts#L30)
 
 ___
 
@@ -548,7 +548,7 @@ The quote element
 
 #### Defined in
 
-rich_text/elements/quote.ts:30
+[rich_text/elements/quote.ts:30](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/quote.ts#L30)
 
 ___
 
@@ -573,7 +573,7 @@ The block kit object for the rich text message
 
 #### Defined in
 
-[rich_text/index.ts:24](https://github.com/roziscoding/smack/blob/6c1641f/src/rich_text/index.ts#L24)
+[rich_text/index.ts:24](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/index.ts#L24)
 
 ___
 
@@ -598,7 +598,7 @@ The section element
 
 #### Defined in
 
-rich_text/elements/section/index.ts:24
+[rich_text/elements/section/index.ts:24](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/index.ts#L24)
 
 ___
 
@@ -623,7 +623,7 @@ A new text element with the style applied
 
 #### Defined in
 
-rich_text/style.ts:29
+[rich_text/style.ts:29](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/style.ts#L29)
 
 ___
 
@@ -648,7 +648,7 @@ A text section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:95
+[rich_text/elements/section/elements.ts:95](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L95)
 
 ___
 
@@ -672,7 +672,7 @@ A user section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:84
+[rich_text/elements/section/elements.ts:84](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L84)
 
 ___
 
@@ -696,4 +696,4 @@ A user group section element
 
 #### Defined in
 
-rich_text/elements/section/elements.ts:116
+[rich_text/elements/section/elements.ts:116](https://github.com/roziscoding/smack/blob/14124f9/src/rich_text/elements/section/elements.ts#L116)

@@ -1,6 +1,6 @@
 {
   "name": "slack-rich-text",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,18 +8,25 @@
     "start": "node dist/index.js",
     "watch": "tsc -w",
     "docs": "typedoc --plugin typedoc-plugin-markdown src/index.ts && mv docs/modules.md API.md && rm -rf docs",
-    "prepublishOnly": "npm run build && npm run docs"
+    "prepublishOnly": "npm run build",
+    "commit": "npm run build && npm run docs && git add API.md && cz"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.19",
+    "cz-conventional-changelog": "^3.3.0",
     "typedoc": "^0.25.8",
     "typedoc-plugin-markdown": "^3.17.1",
     "typescript": "^5.3.3"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
