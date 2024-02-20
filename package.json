@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "start": "node dist/index.js",
     "watch": "tsc -w",
     "docs": "typedoc --plugin typedoc-plugin-markdown src/index.ts && mv docs/modules.md API.md && rm -rf docs",
