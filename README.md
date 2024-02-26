@@ -40,6 +40,26 @@ Renders as:
 
 ![slack block kit builder screenshot](./usage-screenshot.png)
 
+## Passing strings to `richText`
+
+The `richText` function does not support receiving a string as a value. That means that the following code will not work:
+
+```javascript
+const name = "John";
+const blocks = richText`
+  Hello, ${name}!
+`; // This will throw an error
+```
+
+To fix this, use the `section` function to transform the string into a block:
+
+```javascript
+const name = "John";
+const blocks = richText`
+  ${section`Hello, ${name}!`}
+`;
+```
+
 ## API Reference
 
 See the [API Reference](./API.md) for a detailed explanation of the available functions.
