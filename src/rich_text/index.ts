@@ -32,6 +32,10 @@ export const richText = (
       if (str) elements.push(createSection([text(str)]));
       if (index < values.length) {
         const value = values[index];
+        if (typeof value === "string")
+          throw new Error(
+            `The richText function does not accept strings as values. If you're trying to interpolate a string variable, wrap the line in a section block. See https://github.com/roziscoding/slack-rich-text/blob/main/README.md#passing-strings-to-richtext`
+          );
         if (Array.isArray(value)) elements.push(...value);
         else elements.push(value);
       }
@@ -47,4 +51,3 @@ export * from "./elements/preformatted";
 export * from "./elements/quote";
 export * from "./elements/section";
 export * from "./style";
-

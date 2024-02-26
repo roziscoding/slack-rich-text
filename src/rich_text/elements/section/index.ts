@@ -1,5 +1,4 @@
-import { createBlock } from "../block";
-import { SectionElement } from "./elements";
+import { SectionElement, text } from "./elements";
 export * from "./elements";
 
 export type Section = {
@@ -8,7 +7,7 @@ export type Section = {
 };
 export const createSection = (elements: SectionElement[]): Section => ({
   type: "rich_text_section",
-  elements,
+  elements: elements.map((el) => (typeof el === "string" ? { type: "text", text: el } : el)),
 });
 
 /**
@@ -21,4 +20,14 @@ export const br = createSection([{ type: "text", text: "\n" }]);
  * Creates a section element from a template string
  * @returns The section element
  */
-export const section = createBlock(createSection);
+export const section = (string: TemplateStringsArray, ...values: Array<SectionElement | string>) => {
+  const elements: SectionElement[] = [];
+  string.forEach((str, index) => {
+    if (str) elements.push(text(str));
+    const value = values[index];
+    if (index < values.length) {
+      elements.push(typeof value === "string" ? text(value) : value);
+    }
+  });
+  return createSection(elements);
+};
