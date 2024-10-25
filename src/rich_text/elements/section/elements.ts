@@ -37,9 +37,9 @@ type UserSectionElement = {
   style?: ChannelSectionElement["style"];
 };
 
-type UserGropupSectionElement = {
-  type: "user_group";
-  user_group_id: string;
+type UserGroupSectionElement = {
+  type: "usergroup";
+  usergroup_id: string;
   style?: ChannelSectionElement["style"];
 };
 
@@ -48,7 +48,8 @@ export type SectionElement =
   | ChannelSectionElement
   | EmojiSectionElement
   | LinkSectionElement
-  | UserSectionElement;
+  | UserSectionElement
+  | UserGroupSectionElement;
 
 /**
  * Mention a channel
@@ -113,7 +114,7 @@ export const emoji = (name: string): EmojiSectionElement => ({
  * @param user_group_id ID of the user group
  * @returns A user group section element
  */
-export const userGroup = (user_group_id: string): UserGropupSectionElement => ({
-  type: "user_group",
-  user_group_id,
+export const userGroup = (usergroup_id: string): UserGroupSectionElement => ({
+  type: "usergroup",
+  usergroup_id,
 });
